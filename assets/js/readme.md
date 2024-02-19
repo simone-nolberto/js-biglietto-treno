@@ -7,7 +7,7 @@ va applicato uno sconto del 40% per gli over 65 (fortunelli).
 
 # Steps
 - Chiedo all'utente tramite input quanti chilometri deve percorrere e la sua età.
-- Calcolo il prezzo del biglietto, il costo al KM è di 0.21€;
+- Calcolo il prezzo del biglietto, sapendo il costo al KM è di 0.21€;
 - Applico una scontistica del 20% per gli under18, e del 40% per gli over65; 
 - calcolo il costo finale con massimo due cifre decimali.
 
