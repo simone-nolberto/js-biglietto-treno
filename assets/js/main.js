@@ -4,28 +4,22 @@ let userAge = Number(prompt ("Specifica la tua età"));
 console.log(userMileage);
 console.log(userAge);
 
-/*
-(function formatAsPercentage(num) {
-    return new Intl.NumberFormat('default', {
-      style: 'percent',
-      minimumFractionDigits: 2,
-      maximumFractionDigits: 2,
-    }).format(num / 100);
-}
- */
+
+let euro = Intl.NumberFormat('en-DE', {
+    style: 'currency',
+    currency: 'EUR',
+});
 
 const mileagePrice = 0.21;
-const underAgeDiscount = 0.168;
-const overDiscount = 0.126;
+const underAgeDiscount = 0.16;
+const overDiscount = 0.12;
 
-
-  
 
 if (userAge < 18){
-    console.log(userMileage * underAgeDiscount)
+    console.log(euro.format(userMileage * underAgeDiscount));
 } else if (userAge >= 65){
-    console.log(userMileage * overDiscount);
+    console.log(euro.format(userMileage * overDiscount));
 } else {
-    console.log(userMileage * mileagePrice);
+    console.log(euro.format(userMileage * mileagePrice));
 }
 
